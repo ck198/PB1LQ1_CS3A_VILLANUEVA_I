@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RSA Sign Up 1024-bit</title>
+    <link rel="stylesheet" href="sursa.css">
+</head>
+
+<body>
+
+    <h1>Sign Up Form</h1>
+    <p>RSA Encryption and Decryption</p>
+
+    <label>Key Size:</label>
+    <select id="keySize">
+        <option value="1024">RSA 1024-bit</option>
+    </select>
+
+    <br><br>
+
+    <label>Full Name:</label>
+    <input type="text" id="fullname">
+
+    <br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" id="dob">
+
+    <br><br>
+
+    <label>Year Level:</label>
+    <select id="yearlevel">
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <br><br>
+
+    <label>Gender:</label>
+    <select id="gender">
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <br><br>
+
+    <label>Username:</label>
+    <input type="text" id="username">
+
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" id="password">
+
+    <br><br>
+
+    <button onclick="encryptData()">Encrypt Sign Up</button>
+    <button onclick="decryptData()">Decrypt Sign Up</button>
+
+    <p id="message"></p>
+    <h2>Encrypted Output</h2>
+    <textarea id="encrypted" readonly></textarea>
+
+    <h2>Decrypted Output</h2>
+    <textarea id="decrypted" readonly></textarea>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsencrypt@latest/bin/jsencrypt.min.js"></script>
+    <script src="sursa.js"></script>
+
+</body>
+</html>
